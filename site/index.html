@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mulberry Tales | Handmade Goods &amp; Stories</title>
+<meta name="description" content="Mulberry Tales — hand-embroidered rugs, tapestries and table linen, made in the UK. Every piece carries a story.">
+<link rel="icon" href="images/logo_stacked.jpg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="images/logo_stacked.jpg" alt="Mulberry Tales">
+      <span class="brand-word">Mulberry Tales</span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap">
+      <img class="logo-mark" src="images/logo_primary.jpg" alt="Mulberry Tales — Handmade Goods & Stories">
+      <p class="tagline">Handcrafted in the UK &middot; Made to order</p>
+      <p class="lede center">
+        Every rug, tapestry and napkin is hand-embroidered, one at a time —
+        traditional stitchwork brought into a modern home.
+      </p>
+      <div class="hero-actions">
+        <a class="btn solid" href="shop.html">Shop the collection</a>
+        <a class="btn" href="about.html">Our story</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="branch-divider" aria-hidden="true">
+      <span class="line"></span>
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 4C17 4 21 9 17 13C13 9 17 4 17 4Z" stroke="currentColor" stroke-width="1.2"/>
+        <path d="M6 20C10 16 14 17 17 13C20 17 24 16 28 20" stroke="currentColor" stroke-width="1.2"/>
+        <circle cx="9" cy="24" r="2.2" stroke="currentColor" stroke-width="1.2"/>
+        <circle cx="25" cy="24" r="2.2" stroke="currentColor" stroke-width="1.2"/>
+      </svg>
+      <span class="line" style="--dir:left;"></span>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <span class="eyebrow center" style="display:block;">Featured pieces</span>
+      <h2 class="center">A few of Arefa's latest work</h2>
+      <p class="lede center" style="margin-bottom:2.5rem;">
+        Full listings, sizing and made-to-order options live on Etsy.
+      </p>
+      <div class="grid" id="featured-grid"><!-- filled by js/render-products.js --></div>
+      <p class="center" style="margin-top:2.5rem;">
+        <a class="btn" href="shop.html">See the full shop →</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="tint">
+    <div class="wrap story-block">
+      <img src="images/process-rose-embroidery.jpg" alt="Hand embroidering a rose motif">
+      <div>
+        <span class="eyebrow">Handcrafted by hand</span>
+        <h2>Artisanal, made-to-order</h2>
+        <p>
+          Artisanal, handcrafted goods that blend traditional craftsmanship
+          with a modern aesthetic — bringing beauty, warmth, and story into
+          your home.
+        </p>
+        <p>
+          Every piece can be made to order — custom sizes, colours and
+          motifs, built around your space.
+        </p>
+        <a class="btn" href="about.html">Read our story</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap center">
+      <span class="eyebrow">Follow along</span>
+      <h2>@mulberrytales_</h2>
+      <p class="lede center">Process shots, new pieces, and where they're headed next.</p>
+      <div class="hero-actions">
+        <a class="btn solid" href="https://www.instagram.com/mulberrytales_" target="_blank" rel="noopener">Follow on Instagram</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="year"></span> Mulberry Tales. Handmade in the UK.</span>
+    <ul class="foot-links">
+      <li><a href="https://www.instagram.com/mulberrytales_" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.etsy.com/shop/YOUR_ETSY_SHOP_NAME" target="_blank" rel="noopener">Etsy</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/render-products.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

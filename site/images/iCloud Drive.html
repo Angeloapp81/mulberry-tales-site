@@ -1,0 +1,101 @@
+<!DOCTYPE html><html lang="en-gb" data-cw-private-path-prefix="" data-cw-private-build-number="2426Hotfix15" data-cw-private-mastering-number="2426Hotfix15"><head><meta http-equiv="Content-Security-Policy" content="base-uri 'self' *.icloud.com *.icloud.com.cn *.cdn-apple.com; object-src 'none'; script-src blob: 'self' *.apple.com *.cdn-apple.com *.apple-mapkit.com *.apple-cloudkit.com *.apple-livephotoskit.com 'sha256-JFJvxqMr7d0c5kvkhpyFwvNHHhwfiIFw0UaFnTp+u9M=' 'sha256-sdrEBPmX7l9hCfk2YKiOtnKwn/hraJzU8za8ZFMePSA=' 'sha256-26W8JbT1vQArZ+8F3eitbNZVzh5WonwHlQl29E4pato=' 'sha256-svdOQzSg9T05h6Q3mC/8FCU+2bG3vWTBwdPa+czq+YY=' 'sha256-HenvlWVrAISuwfRzCus0xoCe+m4/jV6vXViy4FodZC8=' 'sha256-RNFlY2hYliz7/wOhJYV77O31ETGpABRfn6jJhDiGJTw='; style-src 'self' data: 'unsafe-inline' *.icloud.com *.icloud.com.cn *.apple.com *.cdn-apple.com; default-src 'none'; img-src 'self' blob: data: icloud.com icloud.com.cn *.icloud.com *.icloud.com.cn *.apple.com *.cdn-apple.com *.icloud-content.com *.apple-mapkit.com *.icloud-content.com.cn; media-src 'self' blob: data: *.icloud.com *.icloud.com.cn *.apple.com *.cdn-apple.com *.icloud-content.com *.icloud-content.com.cn; font-src 'self' blob: data: icloud.com icloud.com.cn *.icloud.com *.icloud.com.cn *.apple.com *.cdn-apple.com; connect-src blob: 'self' icloud.com icloud.com.cn *.icloud.com *.icloud.com.cn *.apple.com *.cdn-apple.com *.icloud-content.com *.icloud-content.com.cn *.apple-mapkit.com; frame-src 'self' blob: mailto: tel: *.icloud.com *.icloud.com.cn *.apple.com *.icloud-sandbox.com *.icloud-content.com *.icloud-content.com.cn; form-action 'self' *.icloud.com *.icloud.com.cn; child-src blob: 'self'">
+        
+          <link rel="preload" as="script" href="/applications/iclouddrive/2426Hotfix15/en-gb/main.js">
+        
+        
+            
+                <script type="text/javascript">
+                    (function() {
+                        var html = document.documentElement;
+                        var buildNumberAttribute = 'data-cw-private-build-number';
+                        var masteringNumberAttribute = 'data-cw-private-mastering-number';
+
+                        window._BUILD_INFO_FOR_GLOBAL_ERROR_HANDLERS = {
+                            buildNumber: html.getAttribute(buildNumberAttribute),
+                            masteringNumber: html.getAttribute(masteringNumberAttribute),
+                            locale: html.getAttribute("lang")
+                        };
+                        window._BUILD_INFO_FOR_GLOBAL_ERROR_HANDLERS.jsFiles = [];
+                    })();
+                </script>
+                
+                    <script type="text/javascript">
+                        window._BUILD_INFO_FOR_GLOBAL_ERROR_HANDLERS.jsFiles.push("/applications/iclouddrive/2426Hotfix15/en-gb/main.js");
+                    </script>
+                
+                <script type="text/javascript">"use strict";var _CW_BUILD_INFO=window._BUILD_INFO_FOR_GLOBAL_ERROR_HANDLERS,filterIndexHtml=".*\\/index\\.html",filterMainJs=".*("+_CW_BUILD_INFO.jsFiles.join("|")+")",regexIndexHtml=new RegExp(filterIndexHtml),regexMainJs=new RegExp(filterMainJs);function logMessageToParent(a,b){if(!(window&&window.parent&&window===window.parent||!window.parent.postMessage)){var c=window.location.pathname,d=_CW_BUILD_INFO.buildNumber,e=_CW_BUILD_INFO.masteringNumber;window.parent.postMessage(JSON.stringify({appName:c,buildNumber:d,masteringNumber:e,args:[a,b],isCloudOSMessage:!0,methodName:"recordApplicationMessage"}),"*")}}function buildMessageFromErrorEvent(a){var b=a.detail,c=b.error;return{error:c&&c.message?c.message:b.message,url:b.filename,lineNumber:b.lineno,columnNumber:b.colno,stack:c?c.stack:"not available"}}function defaultErrorFilter(a){var b=a.filename;if(!b||regexIndexHtml.test(b)){var c=a.error&&a.error.stack;if(c){var d=c.split("\n");if(b=d[1]||d[0],/^@user-script/.test(c))return!1}}return regexMainJs.test(b)}function defaultFatalErrorHandler(a){var b=buildMessageFromErrorEvent(a);b.isFatal=!0,logMessageToParent("OnFatalError",b)}function defaultNonFatalErrorHandler(a){var b=buildMessageFromErrorEvent(a);b.isFatal=!1,logMessageToParent("OnNonFatalError",b)}function buildMessageFromRejectionEvent(a){var b=a.detail,c=b.nativeEvent.reason;if(!(c instanceof Error))return{error:"unknown"};var d=c.stack||{};if("string"!=typeof d)return{error:"unknown"};var e=c.message||c.name||(d.match(/^.{0,80}/)||[""])[0],f=d.match(/(?:at |@)(.+?):([0-9]+):([0-9]+)/);return f?{error:e,url:f[1],lineNumber:f[2],columnNumber:f[3],stack:d}:{error:e,stack:d}}function defaultUnhandledRejectionFilter(a){var b=a.reason;if(b){var c,d=b.stack,e=b.sourceURL;if(e)c=e;else if(d){var f=d.split("\n");if(c=f[1]||f[0],/^@user-script/.test(d))return!1}return regexMainJs.test(c)}return!1}function defaultFatalUnhandledRejectionHandler(a){var b=buildMessageFromRejectionEvent(a);b.isFatal=!0,logMessageToParent("OnFatalUnhandledRejection",b)}function defaultNonFatalUnhandledRejectionHandler(a){var b=buildMessageFromRejectionEvent(a);b.isFatal=!1,logMessageToParent("OnNonFatalUnhandledRejection",b)}window.__globalErrorCatcherDefaults={defaultErrorFilter:defaultErrorFilter,defaultFatalErrorHandler:defaultFatalErrorHandler,defaultNonFatalErrorHandler:defaultNonFatalErrorHandler,defaultUnhandledRejectionFilter:defaultUnhandledRejectionFilter,defaultFatalUnhandledRejectionHandler:defaultFatalUnhandledRejectionHandler,defaultNonFatalUnhandledRejectionHandler:defaultNonFatalUnhandledRejectionHandler};</script>
+            
+            <script type="text/javascript">"use strict";try{var event=new window.CustomEvent("test",{cancelable:!0});event.preventDefault()}catch(a){var PolyFillCustomEvent=function(a,b){var c;return b=b||{bubbles:!1,cancelable:!1,detail:void 0},c=document.createEvent("CustomEvent"),c.initCustomEvent(a,b.bubbles,b.cancelable,b.detail),c};PolyFillCustomEvent.prototype=window.Event.prototype,window.CustomEvent=PolyFillCustomEvent}var globalDefaults=window.__globalErrorCatcherDefaults,defaultErrorFilter=globalDefaults.defaultErrorFilter,defaultFatalErrorHandler=globalDefaults.defaultFatalErrorHandler,defaultNonFatalErrorHandler=globalDefaults.defaultNonFatalErrorHandler,defaultUnhandledRejectionFilter=globalDefaults.defaultUnhandledRejectionFilter,defaultFatalUnhandledRejectionHandler=globalDefaults.defaultFatalUnhandledRejectionHandler,defaultNonFatalUnhandledRejectionHandler=globalDefaults.defaultNonFatalUnhandledRejectionHandler;(function(){function a(a){var c,d="";d=b(a)?"FatalError":"NonFatalError",c=new CustomEvent(d,{detail:{error:a.error,message:a.message,filename:a.filename,lineno:a.lineno,colno:a.colno}}),window.dispatchEvent(c)}var b=defaultErrorFilter;window.addEventListener("FatalError",defaultFatalErrorHandler),window.addEventListener("NonFatalError",defaultNonFatalErrorHandler),window.addEventListener("error",a),window.__startFilteringErrors=function(a,c,d){b=a,window.removeEventListener("FatalError",defaultFatalErrorHandler),window.removeEventListener("NonFatalError",defaultNonFatalErrorHandler),c&&d&&(window.addEventListener("FatalError",c),window.addEventListener("NonFatalError",d)),window.__startFilteringErrors=function(){throw new Error("__startFilteringErrors can currently only be invoked once")}}})(),function(){function a(a){var c,d="";d=b(a)?"FatalUnhandledRejection":"NonFatalUnhandledRejection",c=new CustomEvent(d,{detail:{nativeEvent:a}}),window.dispatchEvent(c)}var b=defaultUnhandledRejectionFilter;window.addEventListener("FatalUnhandledRejection",defaultFatalUnhandledRejectionHandler),window.addEventListener("NonFatalUnhandledRejection",defaultNonFatalUnhandledRejectionHandler),window.addEventListener("unhandledrejection",a),window.__startFilteringUnhandledRejections=function(a,c,d){b=a,window.removeEventListener("FatalUnhandledRejection",defaultFatalUnhandledRejectionHandler),window.removeEventListener("NonFatalUnhandledRejection",defaultNonFatalUnhandledRejectionHandler),c&&d&&(window.addEventListener("FatalUnhandledRejection",c),window.addEventListener("NonFatalUnhandledRejection",d)),window.__startFilteringUnhandledRejections=function(){throw new Error("__startFilteringUnhandledRejections can currently only be invoked once")}}}();</script>
+        
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="description" content="Upload your files and access them anytime on your iPhone, iPad, iPod touch, Mac, or PC.">
+        
+        
+        <link rel="preload" as="font" type="font/woff" href="/fonts/SFNSText-Light.woff" crossorigin="">
+        
+        <link rel="preload" as="font" type="font/woff" href="/fonts/SFNSText-Medium.woff" crossorigin="">
+        
+        <link rel="preload" as="font" type="font/woff" href="/fonts/SFNSText-Regular.woff" crossorigin="">
+        
+        <link rel="preload" as="font" type="font/woff" href="/fonts/SFNSDisplay-Semibold.woff" crossorigin="">
+        
+        <link rel="preload" as="font" type="font/woff" href="/fonts/SFUIDisplay-Thin.woff" crossorigin="">
+        
+        <link rel="preload" as="font" type="font/woff" href="/fonts/SFUIText-Light.woff" crossorigin="">
+        
+        <link rel="preload" as="font" type="font/woff" href="/fonts/SFUIText-Medium.woff" crossorigin="">
+        
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>iCloud Drive</title>
+        
+        
+        <link rel="icon" href="/favicon.ico">
+        
+        <script type="text/javascript">
+            (function() {
+                var html = document.documentElement;
+                var pathPrefixAttribute = 'data-cw-private-path-prefix';
+                var buildNumberAttribute = 'data-cw-private-build-number';
+                var masteringNumberAttribute = 'data-cw-private-mastering-number';
+
+                window.__CW_PATH_PREFIX = html.getAttribute(pathPrefixAttribute);
+                window.__CW_BUILD_INFO = {
+                    buildNumber: html.getAttribute(buildNumberAttribute),
+                    masteringNumber: html.getAttribute(masteringNumberAttribute),
+                    locale: html.getAttribute("lang")
+                };
+
+                html.removeAttribute(pathPrefixAttribute);
+                html.removeAttribute(buildNumberAttribute);
+                html.removeAttribute(masteringNumberAttribute);
+            })();
+        </script>
+        
+            
+        <script type="text/javascript" class="cw-head-scripts">
+            (function(o,e,t){var r=navigator&&navigator.userAgent;if(r){var s,a,n,w=r.toLowerCase(),i="PointerEvent"in window,f="createTouch"in document||"Touch"in window,l=i?navigator.maxTouchPoints>0:f,p=!!/mac/.test(w)&&!/like mac/.test(w),d=p&&!(p&&l),c=!!w.match(/\b(iPad|iPhone|iPod)\b.*\bOS (\d+)_(\d+)/i);if(d&&(s=w.match(/mac os x (\d+)[ _.](\d+)/)),c&&(s=w.match(/\b(iPad|iPhone|iPod)\b.*\bOS (\d+)_(\d+)/i)),s&&(a=s[1]?parseInt(s[1],10):null,n=s[2]?parseInt(s[2],10):null),null===a)return!1;if(d){if(a>10)return!0;if(10===a&&n>=15)return!0}return!!(c&&a>=13)}})()||(function(){var o=window.navigator.language.toLocaleLowerCase(),[e]=o.split("-"),t={"zh-cn":"|SF+Pro+SC,v1","zh-hk":"|SF+Pro+HK,v1","zh-mo":"|SF+Pro+HK,v1","zh-tw":"|SF+Pro+TC,v1",ar:"|SF+Pro+AR,v3",ja:"|SF+Pro+JP,v1",ko:"|SF+Pro+KR,v2",th:"|SF+Pro+TH,v2"},r=t[o]||t[e]||"",s=document.createElement("link");s.rel="stylesheet",s.media="all",s.href="//www.apple.com/wss/fonts/?families=SF+Pro,v3"+r,s.type="text/css",document.head.appendChild(s)}(),function(o,e){for(var t=0,r=o.length;t<r;t++){var s=o[t],a=document.createElement("link");a.rel="preload",a.as="font",a.href=s,a.type="font/woff2",a.crossOrigin=!0,document.head.appendChild(a)}}(["//www.apple.com/wss/fonts/SF-Pro-Display/v3/sf-pro-display_light.woff2","//www.apple.com/wss/fonts/SF-Pro-Text/v3/sf-pro-text_light.woff2","//www.apple.com/wss/fonts/SF-Pro-Display/v3/sf-pro-display_semibold.woff2","//www.apple.com/wss/fonts/SF-Pro-Text/v3/sf-pro-text_semibold.woff2","//www.apple.com/wss/fonts/SF-Pro-Display/v3/sf-pro-display_medium.woff2","//www.apple.com/wss/fonts/SF-Pro-Text/v3/sf-pro-text_medium.woff2","//www.apple.com/wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular.woff2","//www.apple.com/wss/fonts/SF-Pro-Text/v3/sf-pro-text_regular.woff2"]));
+        </script>
+            
+        
+    </head>
+
+    <body>
+        
+        
+        
+        
+            <script type="text/javascript" src="https://cdn.apple-cloudkit.com/ck/2/cloudkit.js"></script>
+        
+
+        
+                    <script type="text/javascript" src="/applications/iclouddrive/2426Hotfix15/en-gb/main.js" defer=""></script>
+                
+                    <link rel="stylesheet" href="/applications/iclouddrive/2426Hotfix15/en-gb/main.css">
+                
+
+    
+
+</body></html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop | Mulberry Tales</title>
+<meta name="description" content="Shop Mulberry Tales' hand-embroidered rugs, tapestries and table linen. Full listings and made-to-order options on Etsy.">
+<link rel="icon" href="images/logo_stacked.jpg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="images/logo_stacked.jpg" alt="Mulberry Tales">
+      <span class="brand-word">Mulberry Tales</span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" aria-current="page">Shop</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section style="padding-bottom:1rem;">
+    <div class="wrap center">
+      <span class="eyebrow">The Shop</span>
+      <h1>Take a piece of the story home</h1>
+      <p class="lede center">
+        Every rug, tapestry and napkin is made to order by hand. Tap a piece
+        to view sizing, colourways and pricing on Etsy.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top:1rem;">
+    <div class="wrap">
+      <div class="grid" id="product-grid"><!-- filled by js/render-products.js --></div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="branch-divider" aria-hidden="true">
+      <span class="line"></span>
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 4C17 4 21 9 17 13C13 9 17 4 17 4Z" stroke="currentColor" stroke-width="1.2"/>
+        <path d="M6 20C10 16 14 17 17 13C20 17 24 16 28 20" stroke="currentColor" stroke-width="1.2"/>
+        <circle cx="9" cy="24" r="2.2" stroke="currentColor" stroke-width="1.2"/>
+        <circle cx="25" cy="24" r="2.2" stroke="currentColor" stroke-width="1.2"/>
+      </svg>
+      <span class="line" style="--dir:left;"></span>
+    </div>
+  </div>
+
+  <section style="padding-top:0;">
+    <div class="wrap center">
+      <span class="tag-badge">Custom orders welcome</span>
+      <h2>Don't see quite the piece you want?</h2>
+      <p class="lede center">
+        Every design can be made to order in a custom size, colourway or
+        motif — DM on Instagram or send a note through the contact page.
+      </p>
+      <a class="btn solid" href="contact.html">Get in touch</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="year"></span> Mulberry Tales. Handmade in the UK.</span>
+    <ul class="foot-links">
+      <li><a href="https://www.instagram.com/mulberrytales_" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.etsy.com/shop/YOUR_ETSY_SHOP_NAME" target="_blank" rel="noopener">Etsy</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/render-products.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

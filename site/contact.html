@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Mulberry Tales</title>
+<meta name="description" content="Get in touch with Mulberry Tales for custom orders, sizing questions, or wholesale enquiries.">
+<link rel="icon" href="images/logo_stacked.jpg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="images/logo_stacked.jpg" alt="Mulberry Tales">
+      <span class="brand-word">Mulberry Tales</span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section style="padding-bottom:1rem;">
+    <div class="wrap center">
+      <span class="eyebrow">Get in touch</span>
+      <h1>Custom orders &amp; enquiries</h1>
+      <p class="lede center">
+        Have a size, colour or motif in mind? Send a note — most custom
+        pieces start with a quick chat about what you're picturing.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top:1rem;">
+    <div class="wrap contact-grid">
+      <div>
+        <!--
+          IMPORTANT: GitHub Pages only serves static files — a plain HTML
+          form has nowhere to send itself. The action below points at
+          Formspree (formspree.io), a free service that forwards form
+          submissions to your email with no backend code needed:
+            1. Go to formspree.io, sign up free, create a form
+            2. It gives you a URL like https://formspree.io/f/abc123
+            3. Replace YOUR_FORMSPREE_ID below with that ID
+          I can't confirm Formspree's current free-tier limits — check
+          their pricing page. Any similar service (Basin, Getform) works
+          the same way.
+        -->
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button class="btn solid" type="submit" style="cursor:pointer;">Send message</button>
+        </form>
+      </div>
+
+      <div>
+        <h3>Find us</h3>
+        <ul class="social-list">
+          <li>
+            <a href="https://www.instagram.com/mulberrytales_" target="_blank" rel="noopener">Instagram — @mulberrytales_</a>
+          </li>
+          <li>
+            <a href="https://www.etsy.com/shop/YOUR_ETSY_SHOP_NAME" target="_blank" rel="noopener">Etsy shop</a>
+          </li>
+          <li>
+            <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a>
+          </li>
+        </ul>
+        <p class="lede" style="margin-top:2rem;">
+          Based in the UK — shipping available across the UK and, on
+          request, internationally.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="year"></span> Mulberry Tales. Handmade in the UK.</span>
+    <ul class="foot-links">
+      <li><a href="https://www.instagram.com/mulberrytales_" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.etsy.com/shop/YOUR_ETSY_SHOP_NAME" target="_blank" rel="noopener">Etsy</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
